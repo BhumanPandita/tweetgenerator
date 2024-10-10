@@ -4,7 +4,7 @@ from langchain import PromptTemplate
 from langchain import LLMChain
 import os
 
-os.environ['GOOGLE_API_KEY'] = st.secrets('GOOGLE_API_KEY')
+os.environ['GOOGLE_API_KEY'] = st.secrets['GOOGLE_API_KEY']
 
 model = ChatGoogleGenerativeAI(model = "gemini-1.5-flash-latest")
 
